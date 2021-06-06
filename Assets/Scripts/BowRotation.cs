@@ -15,9 +15,14 @@ public class BowRotation : MonoBehaviour
     private void Update()
     {
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        shootDirection = (Vector2)mousePosition - _bowPosition;
+        shootDirection = CalculateDirection(mousePosition,_bowPosition);
         
         FaceToShootDirection();
+    }
+
+    private Vector2 CalculateDirection(Vector2 mousePosition, Vector2 bowPosition)
+    {
+        return mousePosition - bowPosition;
     }
 
     private void FaceToShootDirection()

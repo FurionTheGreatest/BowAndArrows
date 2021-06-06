@@ -19,6 +19,6 @@ public class BowShoot : MonoBehaviour
     {
         var arrow = Instantiate(arrowPrefab, transform.position, transform.rotation);
         var arrowRigidbody = arrow.GetComponent<Rigidbody2D>();
-        arrowRigidbody.AddForce(transform.right * launchForce);
+        arrowRigidbody.velocity = transform.right * launchForce;
     }
 }

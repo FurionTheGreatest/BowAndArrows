@@ -518,6 +518,7 @@ GameObject:
   - component: {fileID: 1971144539}
   - component: {fileID: 1971144541}
   - component: {fileID: 1971144542}
+  - component: {fileID: 1971144543}
   m_Layer: 0
   m_Name: 'Bow '
   m_TagString: Untagged
@@ -616,5 +617,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106f2df170a080442ba625135bc9b74c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 1500
+  launchForce: 20
   arrowPrefab: {fileID: 8666139072985612295, guid: 0021435a2719d3543a22793a1f3b5cf7, type: 3}
+--- !u!114 &1971144543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971144538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639afb72987885c4f91ad08abca4f3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointPrefab: {fileID: 3983594554107661964, guid: 6ae5530f4d57db74abeb951e219e4e5a, type: 3}
+  trajectoryPoints: []
+  pointsCount: 50
